@@ -4,26 +4,53 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>ICICI Net banking Login page</title>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 5px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+</style>
+
 </head>
 <body>
 
-	<form action="InternetBankingServlet" method="post">
-		<table>
-		<tr> <td align="center"><br>USER LOGIN <br> </td> </tr>
-			<tr>
-				<td>User ID</td>
-				<td><input type="text" name="uname" required="required" /></td>
-			</tr>
-			<tr>
-				<td>Password</td>
-				<td><input type="password" name="password" required="required" /></td>
-			</tr>
-			<tr>
-				<td><input type="submit" value="Login" /></td>
-			</tr>
-		</table>
-	</form>
-
+<form action="InternetBankingServlet" method="post">
+       <div class="container">
+           <label for="uname"><b>User name</b></label>
+           <input type="text" placeholder="Enter User name" name="uname" required> <br>
+       
+           <label for="psw"><b>Password</b></label>
+           <input type="password" placeholder="Enter Password" name="password" required><br>
+	       
+           <button type="submit">Login</button>
+       </div>
+</form>
 </body>
 </html>
