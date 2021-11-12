@@ -23,10 +23,10 @@
 				formaction="http://localhost:8585/Registration/InternetBanking.jsp">Internet Banking</button>
 			<br> <br> 
 			<button type="submit"
-				formaction="http://localhost:8585/Registration/CreditCard.jsp">Debit Card</button>
+				formaction="http://localhost:8585/Registration/creditCard.jsp">Debit Card</button>
 			<br> <br> 
 			<button type="submit"
-				formaction="http://localhost:8585/Registration/DebitCard.jsp">Credit Card</button>
+				formaction="http://localhost:8585/Registration/debitCard.jsp">Credit Card</button>
 			<br> <br> If you want to go back, please click 
 			<a href="http://localhost:8585/Registration/userDashboard.jsp">HERE</a>
 	</form>
